@@ -1,0 +1,124 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $mainFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: $bg-dark;
+  color: $white;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+._accent-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main {
+  padding-top: 150px;
+  position: relative;
+  display: grid;
+  align-items: flex-start;
+  width: 100%;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 40px;
+  flex: 1;
+
+  &__inner {
+    border-radius: 30px;
+    padding: 40px;
+  }
+}
+
+.logo {
+  max-width: 151px;
+  width: 100%;
+
+  &__img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.btn {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 14px 20px;
+  background-color: $accent;
+  border: 2px solid $accent;
+  line-height: 11px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: $accentHover;
+    border-color: $accentHover;
+  }
+
+  &:active {
+    background-color: transparent;
+    border-color: $accent;
+  }
+
+  &_2 {
+    background-color: transparent;
+    border-color: $accent;
+
+    &:hover {
+      background-color: $accent;
+      color: $white;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  &_3 {
+    border-color: transparent;
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: transparent;
+    }
+
+    &:active {
+      background-color: $accent;
+      color: $white;
+      border-color: $accent;
+    }
+  }
+
+}

@@ -1,0 +1,108 @@
+.footer {
+  position: relative;
+  margin-top: auto;
+  padding-bottom: 80px;
+
+  @include adpt ($tab-r) {
+    padding-bottom: 30px;
+  }
+
+  @include adpt ($stab-r) {
+    padding-bottom: 24px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 41px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 32px;
+
+    @include adpt ($tab-r) {
+      flex-direction: column;
+      padding-bottom: 31px;
+      align-items: flex-start;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__logo {
+    @include adpt ($tab-r) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 32px;
+    grid-auto-flow: column;
+
+    @include adpt ($tab-r) {
+      grid-auto-flow: row;
+      grid-gap: 24px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+
+    &:hover {
+      color: $accentHover;
+    }
+
+    &:active {
+      color: $accent;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include adpt ($tab-r) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__bottom-list {
+    display: grid;
+    grid-gap: 32px;
+    grid-auto-flow: column;
+
+    @include adpt ($tab-r) {
+      grid-auto-flow: row;
+      grid-gap: 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__bottom-item {
+    & a {
+      &:hover {
+        color: $accentHover;
+      }
+
+      &:active {
+        color: $accent;
+      }
+    }
+  }
+
+  &__bottom-text {
+    color: rgba(244, 245, 246, 0.8);
+
+    &_copyright {
+      @include adpt ($tab-r) {
+        padding-bottom: 8px;
+        display: block;
+      }
+    }
+  }
+
+}

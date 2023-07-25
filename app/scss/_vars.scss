@@ -1,0 +1,54 @@
+$accent: var(--accent-color);
+$accentHover: var(--accent-color-hover);
+$default-dark: var(--default-color-dark);
+$white: var(--white-color);
+$red: var(--red-color);
+$grey: var(--grey-color);
+$green: var(--green-color);
+$bg-dark: var(--bg-color-dark);
+
+$mainFont: var(--main-font);
+
+
+:root {
+  --accent-color: #FF7A1A;
+  --accent-color-hover: #FF8B36;
+  --default-color-dark: #1E1E1E;
+  --white-color: #ffffff;
+  --green-color: #23A45A; 
+  --red-color: #F11A1A; 
+  --grey-color: #E5E5EB; 
+
+  --bg-color-dark: #0A0621; 
+
+
+  --main-font: 'GothamPro', sans-serif;
+}
+
+
+
+$big-r: 1380;
+$desm-r: 1280;
+$tab-r: 1024;
+$mtab-r: 992;
+$stab-r: 768;
+$bmob-r: 576;
+
+
+
+
+@mixin adpt($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin adpt-mob($width) {
+  @media (min-width: #{$width}px) {
+    @content;
+  }
+}
+
+@include adpt ($bmob-r) {
+
+}
