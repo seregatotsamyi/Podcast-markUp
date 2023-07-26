@@ -2,4 +2,98 @@
   position: sticky;
   top: 0;
   left: 0;
+
+  @include adpt ($tab-r) {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background-color: $bg-dark;
+    z-index: 30;
+    padding: 30px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+
+    &._open {
+      transform: translateX(0);
+    }
+  }
+
+  @include adpt ($bmob-r) {
+    width: 100%;
+    box-shadow: none;
+    padding: 30px 15px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__link {
+    border-radius: $br-small;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    transition: background-color 0.3s;
+
+    @include adpt ($tab-r) {
+      font-size: 14px;
+      padding: 8px;
+    }
+
+    &:hover {
+      background-color: $bg-dark-l;
+    }
+  }
+
+  &__link-img {
+    margin-right: 10px;
+
+    @include adpt ($tab-r) {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+
+  &__list-auth {
+    margin-top: 15px;
+    padding-top: 14px;
+    border-top: 1px solid $grey;
+
+    @include adpt ($tab-r) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include adpt ($tab-r) {
+      display: block;
+      margin-left: auto;
+    }
+  }
+
+  &__mob {
+    display: none;
+
+    @include adpt ($tab-r) {
+      display: block;
+      margin-top: 15px;
+      padding-top: 14px;
+      border-top: 1px solid $grey;
+    }
+  }
+
+  &__mob-unAuth {
+    display: grid;
+    grid-gap: 4px;
+  }
 }

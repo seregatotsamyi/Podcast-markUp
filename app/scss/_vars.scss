@@ -6,6 +6,11 @@ $red: var(--red-color);
 $grey: var(--grey-color);
 $green: var(--green-color);
 $bg-dark: var(--bg-color-dark);
+$bg-dark-l: var(--bg-color-dark-l);
+
+$br-small: var(--br-small);
+$br-midl: var(--br-midl);
+$br-big: var(--br-big);
 
 $mainFont: var(--main-font);
 
@@ -20,7 +25,11 @@ $mainFont: var(--main-font);
   --grey-color: #E5E5EB; 
 
   --bg-color-dark: #0A0621; 
+  --bg-color-dark-l: #231f38; 
 
+  --br-small: 7px;
+  --br-midl: 15px;
+  --br-big: 30px;
 
   --main-font: 'GothamPro', sans-serif;
 }

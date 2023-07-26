@@ -6,37 +6,87 @@
       <a class="header__logo logo" href="/">
         <img class="logo__img" width="151" height="61" src="images/logo.svg" alt="logo">
       </a>
+      <div class="header__right-wrap">
 
-      <form class="header__search search">
-        <div class="search__inner">
-          <button class="search__btn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.867 18 18 14.867 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18ZM19.485 18.071L22.314 20.899L20.899 22.314L18.071 19.485L19.485 18.071Z"
-                fill="#fff" />
-
-              <clipPath>
-                <rect width="24" height="24" fill="white" />
-              </clipPath>
-            </svg>
+        <form class="header__search search ">
+          <div class="search__inner">
+            <button class="search__btn-open" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.867 18 18 14.867 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18ZM19.485 18.071L22.314 20.899L20.899 22.314L18.071 19.485L19.485 18.071Z"
+                  fill="#fff" />
+  
+                <clipPath>
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </svg>
+            </button>
+            <button class="search__btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.867 18 18 14.867 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18ZM19.485 18.071L22.314 20.899L20.899 22.314L18.071 19.485L19.485 18.071Z"
+                  fill="#fff" />
+  
+                <clipPath>
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </svg>
+            </button>
+            <input class="search__input" type="text" placeholder="Подкасты, авторы, эпизоды">
+          </div>
+        </form>
+  
+        <div class="header__right">
+          <!-- <div class="header__unAuth">
+            <a class="header__btn btn  btn_3" href="#">
+              Войти
+            </a>
+            <a class="header__btn btn btn_2" href="#">
+              Регистрация
+            </a>
+          </div> -->
+          <div class="header__auth">
+            <div class="header__auth-top js-auth-list">
+              <img class="header__auth-img" src="images/avatar/defult.png" alt="avatar" width="36" height="36">
+              <div class="header__auth-name">Сергей Москалев</div>
+            </div>
+            <div class="header__auth-bottom">
+              <ul class="header__auth-list">
+                <li class="header__auth-item">
+                  <a class="header__auth-link" href="#">
+                    <img class="header__auth-link-img" src="images/icon/user-3-line.svg" alt="icon" width="20" height="20">
+                    <span>Кабинет автора</span>
+                  </a>
+                </li>
+                <li class="header__auth-item">
+                  <a class="header__auth-link" href="#">
+                    <img class="header__auth-link-img" src="images/icon/heart-3-line.svg" alt="icon" width="20" height="20">
+                    <span>Избранное</span>
+                  </a>
+                </li>
+                <li class="header__auth-item">
+                  <a class="header__auth-link" href="#">
+                    <img class="header__auth-link-img" src="images/icon/settings-3-line.svg" alt="icon" width="20" height="20">
+                    <span>Мой профиль</span>
+                  </a>
+                </li>
+                <li class="header__auth-item">
+                  <a class="header__auth-link" href="#">
+                    <img class="header__auth-link-img" src="images/icon/logout-box-r-line.svg" alt="icon" width="20" height="20">
+                    <span>Выход</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="header__burger burger js-toggle-menu" type="button">
+            <img class="burger__img" src="images/icon/menu-3-line.svg" alt="menu-3-line.svg" width="24" height="24">
           </button>
-          <input class="search__input" type="text" placeholder="Подкасты, авторы, эпизоды">
         </div>
-      </form>
 
-      <div class="header__right">
-        <div class="header__unAuth">
-          <a class="header__btn btn  btn_3" href="#">
-            Войти
-          </a>
-          <a class="header__btn btn btn_2" href="#">
-            Регистрация
-          </a>
-        </div>
-        <div class="header__auth">
-
-        </div>
       </div>
+
+      
     </div>
 
   </div>

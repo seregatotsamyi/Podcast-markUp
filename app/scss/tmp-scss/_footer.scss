@@ -2,13 +2,19 @@
   position: relative;
   margin-top: auto;
   padding-bottom: 80px;
+  padding-top: 100px;
 
   @include adpt ($tab-r) {
     padding-bottom: 30px;
+    padding-top: 80px;
   }
 
   @include adpt ($stab-r) {
     padding-bottom: 24px;
+  }
+
+  @include adpt ($bmob-r) {
+    padding-top: 50px;
   }
 
   &__top {
