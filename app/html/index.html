@@ -10,7 +10,7 @@
     </button>
     <ul class="menu__list">
       <li class="menu__item">
-        <a class="menu__link" href="#">
+        <a class="menu__link _active" href="#">
           <img class="menu__link-img" src="images/icon/home.svg" alt="homepage" width="24" height="24">
           <span>Главная</span>
         </a>
@@ -117,14 +117,17 @@
 
 
   <div class="main__inner _accent-bg">
-    <h1 class="title">
-      Заголовок первого уровня
-    </h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsam non. Exercitationem provident, laudantium
-      possimus aspernatur, ratione id fuga illum sapiente repudiandae a, dolorem distinctio quia! Rerum consequatur
-      quibusdam iste!
-    </p>
+
+    <div class="main-page">
+      @include('components/_main-item.html')
+      @include('components/_main-item.html')
+
+      @include('components/_main-slider.html')
+
+    </div>
+
+
+
   </div>
 </main>
 

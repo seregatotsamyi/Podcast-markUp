@@ -47,7 +47,8 @@
       padding: 8px;
     }
 
-    &:hover {
+    &:hover,
+    &._active {
       background-color: $bg-dark-l;
     }
   }

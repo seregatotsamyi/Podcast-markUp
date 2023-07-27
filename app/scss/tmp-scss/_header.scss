@@ -6,8 +6,10 @@
   padding: 20px 0;
   z-index: 20;
   background-color: $bg-dark;
-  @include adpt ($bmob-r){
+
+  @include adpt ($bmob-r) {
     padding: 15px 0;
+    border-bottom: 2px solid $bg-dark-l;
   }
 
   &__inner {
@@ -16,11 +18,13 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__right-wrap{
+
+  &__right-wrap {
     flex: 1;
     justify-content: space-between;
     align-items: center;
     display: flex;
+
     @include adpt ($stab-r) {
       justify-content: flex-end;
     }
@@ -28,7 +32,8 @@
 
   &__logo {
     max-width: 151px;
-    @include adpt ($bmob-r){
+
+    @include adpt ($bmob-r) {
       max-width: 128px;
     }
   }

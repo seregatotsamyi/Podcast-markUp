@@ -1,0 +1,239 @@
+.item {
+
+  &__inner {
+    padding: 5px 20px;
+    border-radius: $br-midl;
+    border: 2px solid transparent;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 26px 48px 1fr 22px 75px;
+    grid-gap: 10px;
+    transition: border-color 0.3s;
+
+    @include adpt ($tab-r) {
+      background-color: $bg-dark-l;
+    }
+
+    @include adpt ($bmob-r) {
+      padding: 5px 10px;
+      grid-template-columns: 20px 38px 1fr 24px;
+    }
+
+    &:hover {
+      border-color: $white;
+
+      @include adpt ($bmob-r) {
+        border-color: transparent;
+      }
+
+      & .item__show {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      & .item__time {
+        opacity: 0;
+      }
+
+      & .item__img-play {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+  }
+
+  &__img-play {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s;
+  }
+
+  &__img-play-icon {
+    transition: all 0.3s;
+
+    &._anim {
+
+      animation: play 2s ease infinite;
+    }
+  }
+
+  &__add-btn {
+    @include adpt ($bmob-r) {
+      display: none;
+    }
+  }
+
+  &__number {
+    @include adpt ($bmob-r) {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 4px;
+
+    @include adpt ($bmob-r) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &__text {
+    overflow: hidden;
+    line-height: 1.3;
+  }
+
+  &__episode {
+    white-space: nowrap;
+    font-size: 15px;
+    display: block;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+
+    @include adpt ($bmob-r) {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+
+  }
+
+  &__podcast {
+    opacity: 0.6;
+    font-size: 14px;
+    color: $grey;
+
+    @include adpt ($bmob-r) {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  &__time {
+    font-size: 15px;
+    text-align: right;
+    transition: opacity 0.3s;
+
+    @include adpt ($bmob-r) {
+      opacity: 0;
+    }
+  }
+
+  &__show {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 60px;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+
+    @include adpt ($bmob-r) {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &__add-heart {
+    @include adpt ($bmob-r) {
+      display: none;
+    }
+  }
+
+  &__sublist-wrap {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    background-color: $bg-dark;
+    z-index: 4;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 220px;
+    padding: 10px 5px;
+    border-radius: $br-small;
+    box-shadow: 0 2px 7px rgba(255, 255, 255, 0.2);
+
+    &._active {
+      opacity: 1;
+      z-index: 4;
+      pointer-events: all;
+    }
+  }
+
+  &__sublist {
+    display: grid;
+    grid-gap: 12px;
+  }
+
+  &__sublink {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 5px;
+    border-radius: $br-small;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $bg-dark-l;
+    }
+  }
+
+  &__subicon {
+    flex-shrink: 0;
+    margin-right: 5px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 5px;
+
+    @include adpt ($bmob-r) {
+      line-height: 1.2;
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: "·";
+        color: $grey;
+        font-weight: 700;
+        opacity: 0.6;
+      }
+    }
+  }
+}
