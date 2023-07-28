@@ -1,0 +1,10 @@
+.slider {
+
+  &__slide-podcast {
+    max-width: 168px;
+
+    @include adpt ($bmob-r) {
+      max-width: 140px;
+    }
+  }
+}

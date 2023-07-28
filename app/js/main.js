@@ -13,10 +13,27 @@ $(function () {
   $(document).on('click', '.js-toggle-menu', function (e) {
     $('.menu').toggleClass('_open')
   })
-  if (width < 769){
+  if (width < 769) {
     $(document).on('click', '.search__btn-open', function (e) {
       $('.search').toggleClass('_open')
     })
   }
-  
+
+  const swiper = new Swiper('.js-slider', {
+    freeMode: {
+      enabled: true,
+      sticky: true,
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 8,
+    speed: 600,
+    breakpoints: {
+      577: {
+        spaceBetween: 16,
+        speed: 400,
+      }
+
+    }
+  });
+
 });

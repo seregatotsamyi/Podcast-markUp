@@ -119,10 +119,20 @@
   <div class="main__inner _accent-bg">
 
     <div class="main-page">
-      @include('components/_main-item.html')
-      @include('components/_main-item.html')
-
-      @include('components/_main-slider.html')
+      @include('components/_main-item.html',{
+      'title': "Выбор редакции",
+      'subtitle': 'Лучшие эпизоды за месяц'
+      })
+    
+      <!-- @include('components/_main-item.html',{
+      'title': "Лучшие эпизоды месяца",
+      'subtitle': ''
+      }) -->
+      
+      @include('components/_main-slider.html',{
+      'title': "Топ подкастов",
+      'subtitle': 'За месяц'
+      })
 
     </div>
 
