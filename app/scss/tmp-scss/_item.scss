@@ -129,6 +129,9 @@
 
   &__right {
     position: relative;
+    @include adpt ($bmob-r) {
+      height: 24px;
+    }
   }
 
   &__time {
@@ -138,6 +141,9 @@
 
     @include adpt ($bmob-r) {
       opacity: 0;
+      display: none;
+      height: 24px;
+      width: 24px;
     }
   }
 
