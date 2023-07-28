@@ -1,0 +1,50 @@
+.main-list {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+
+    @include adpt ($desm-r) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include adpt ($tab-r) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @include adpt (900) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include adpt ($stab-r) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include adpt ($bmob-r) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 8px;
+    }
+
+    &._playlist {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+
+      @include adpt ($desm-r) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include adpt ($bmob-r) {
+        grid-template-columns: 1fr;
+
+        & .playlist-item {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  & .podcast-item,
+  & .author-item {
+    max-width: 100%;
+  }
+}

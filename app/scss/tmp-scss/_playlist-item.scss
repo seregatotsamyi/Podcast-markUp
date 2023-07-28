@@ -1,17 +1,17 @@
-.podcast-item {
-  max-width: 168px;
+.playlist-item {
+  max-width: 320px;
   line-height: 1.3;
   cursor: pointer;
 
   @include adpt ($bmob-r) {
-    max-width: 140px;
+    max-width: 300px;
     padding: 8px;
     border-radius: $br-midl;
     background-color: $bg-dark-l;
   }
 
   &:hover {
-    & .podcast-item__img {
+    & .playlist-item__img {
       transform: scale(1.08);
     }
   }
@@ -24,7 +24,7 @@
   }
 
   &__img {
-    aspect-ratio: 1/1;
+    aspect-ratio: 320/176;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -32,23 +32,16 @@
   }
 
   &__name {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    margin-bottom: 5px;
     line-height: 1.2;
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
-  }
 
-  &__discr {
-    color: $grey;
-    opacity: 0.8;
-    font-size: 12px;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    @include adpt ($bmob-r) {
+      font-size: 15px;
+    }
   }
 }

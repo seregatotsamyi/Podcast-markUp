@@ -10,28 +10,28 @@
     </button>
     <ul class="menu__list">
       <li class="menu__item">
-        <a class="menu__link _active" href="#">
+        <a class="menu__link " href="#">
           <img class="menu__link-img" src="images/icon/home.svg" alt="homepage" width="24" height="24">
           <span>Главная</span>
         </a>
 
       </li>
       <li class="menu__item">
-        <a class="menu__link" href="#">
+        <a class="menu__link " href="#">
           <img class="menu__link-img" src="images/icon/flashlight.svg" alt="homepage" width="24" height="24">
           <span>Рекомендации</span>
         </a>
 
       </li>
       <li class="menu__item">
-        <a class="menu__link" href="#">
+        <a class="menu__link " href="#">
           <img class="menu__link-img" src="images/icon/broadcast-line.svg" alt="homepage" width="24" height="24">
           <span>Подкасты</span>
         </a>
 
       </li>
       <li class="menu__item">
-        <a class="menu__link" href="#">
+        <a class="menu__link _active" href="#">
           <img class="menu__link-img" src="images/icon/voiceprint-line.svg" alt="homepage" width="24" height="24">
           <span>Эпизоды</span>
         </a>
@@ -120,16 +120,11 @@
 
     <div class="main-page">
 
-      @include('components/_main-item.html',{"title": "Выбор редакции","subtitle": "Лучшие эпизоды за месяц"})
+      @include('components/_main-item.html',{"title": "Популярное за месяц","subtitle": "Топ за месяц"})
 
+      @include('components/_main-item.html',{"title": "Выбор редакции","subtitle": ""})
 
-      @include('components/_main-item.html',{"title": "Лучшие эпизоды за месяц","subtitle": ""})
-
-      @include('components/_main-slider.html',{"title": "Топ подкастов","subtitle": "За месяц"})
-
-      @include('components/_main-slider-playlist.html',{"title": "Плейлисты","subtitle": ""})
-
-      @include('components/_main-list.html',{"title": "Новинки", "subtitle": "Новые эпизоды за последние 14 дней"})
+      @include('components/_main-item.html',{"title": "Новинки","subtitle": "За последние 14 дней"})
 
 
     </div>
