@@ -12,7 +12,9 @@
 
 <body class="body" id="body">
 
-<header class="header ">
+<div class="app">
+
+  <header class="header ">
   <div class="container">
 
     <div class="header__inner">
@@ -106,72 +108,72 @@
   </div>
 </header>
 
-<main class="main container">
+  <main class="main container">
 
-  <nav class="menu">
-    <button class="menu__burger burger js-toggle-menu">
-      <img class="burger__img" src="images/icon/close-line.svg" alt="close" width="24" height="24">
-    </button>
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a class="menu__link _active" href="#">
-          <img class="menu__link-img" src="images/icon/home.svg" alt="homepage" width="24" height="24">
-          <span>Главная</span>
-        </a>
+    <nav class="menu">
+      <button class="menu__burger burger js-toggle-menu">
+        <img class="burger__img" src="images/icon/close-line.svg" alt="close" width="24" height="24">
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link _active" href="#">
+            <img class="menu__link-img" src="images/icon/home.svg" alt="homepage" width="24" height="24">
+            <span>Главная</span>
+          </a>
 
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          <img class="menu__link-img" src="images/icon/flashlight.svg" alt="homepage" width="24" height="24">
-          <span>Рекомендации</span>
-        </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <img class="menu__link-img" src="images/icon/flashlight.svg" alt="homepage" width="24" height="24">
+            <span>Рекомендации</span>
+          </a>
 
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          <img class="menu__link-img" src="images/icon/broadcast-line.svg" alt="homepage" width="24" height="24">
-          <span>Подкасты</span>
-        </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <img class="menu__link-img" src="images/icon/broadcast-line.svg" alt="homepage" width="24" height="24">
+            <span>Подкасты</span>
+          </a>
 
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          <img class="menu__link-img" src="images/icon/voiceprint-line.svg" alt="homepage" width="24" height="24">
-          <span>Эпизоды</span>
-        </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <img class="menu__link-img" src="images/icon/voiceprint-line.svg" alt="homepage" width="24" height="24">
+            <span>Эпизоды</span>
+          </a>
 
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          <img class="menu__link-img" src="images/icon/mic-line.svg" alt="homepage" width="24" height="24">
-          <span>Авторы</span>
-        </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <img class="menu__link-img" src="images/icon/mic-line.svg" alt="homepage" width="24" height="24">
+            <span>Авторы</span>
+          </a>
 
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">
-          <img class="menu__link-img" src="images/icon/play-list-line.svg" alt="homepage" width="24" height="24">
-          <span>Плейлисты</span>
-        </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            <img class="menu__link-img" src="images/icon/play-list-line.svg" alt="homepage" width="24" height="24">
+            <span>Плейлисты</span>
+          </a>
 
-      </li>
-    </ul>
-    <ul class="menu__list-auth">
-      <li class="menu__item-auth menu__item">
-        <a class="menu__link-auth menu__link" href="#">
-          <img class="menu__link-img" src="images/icon/user-3-line.svg" alt="homepage" width="24" height="24">
-          <span>Кабинет автора</span>
-        </a>
-      </li>
-      <li class="menu__item-auth menu__item">
-        <a class="menu__link-auth menu__link" href="#">
-          <img class="menu__link-img" src="images/icon/settings-3-line.svg" alt="homepage" width="24" height="24">
-          <span>Мой профиль</span>
-        </a>
-      </li>
-    </ul>
-    <div class="menu__mob">
-      <!-- <div class="menu__mob-unAuth">
+        </li>
+      </ul>
+      <ul class="menu__list-auth">
+        <li class="menu__item-auth menu__item">
+          <a class="menu__link-auth menu__link" href="#">
+            <img class="menu__link-img" src="images/icon/user-3-line.svg" alt="homepage" width="24" height="24">
+            <span>Кабинет автора</span>
+          </a>
+        </li>
+        <li class="menu__item-auth menu__item">
+          <a class="menu__link-auth menu__link" href="#">
+            <img class="menu__link-img" src="images/icon/settings-3-line.svg" alt="homepage" width="24" height="24">
+            <span>Мой профиль</span>
+          </a>
+        </li>
+      </ul>
+      <div class="menu__mob">
+        <!-- <div class="menu__mob-unAuth">
           <a class="header__btn btn  btn_3" href="#">
             Войти
           </a>
@@ -179,52 +181,54 @@
             Регистрация
           </a>
         </div> -->
-      <div class="menu__mob-auth">
-        <div class="header__auth-top js-auth-list">
-          <img class="header__auth-img" src="images/avatar/defult.png" alt="avatar" width="36" height="36">
-          <div class="header__auth-name">Сергей Москалев</div>
+        <div class="menu__mob-auth">
+          <div class="header__auth-top js-auth-list">
+            <img class="header__auth-img" src="images/avatar/defult.png" alt="avatar" width="36" height="36">
+            <div class="header__auth-name">Сергей Москалев</div>
+          </div>
+          <div class="header__auth-bottom">
+            <ul class="header__auth-list">
+              <li class="header__auth-item">
+                <a class="header__auth-link" href="#">
+                  <img class="header__auth-link-img" src="images/icon/user-3-line.svg" alt="icon" width="20"
+                    height="20">
+                  <span>Кабинет автора</span>
+                </a>
+              </li>
+              <li class="header__auth-item">
+                <a class="header__auth-link" href="#">
+                  <img class="header__auth-link-img" src="images/icon/heart-3-line.svg" alt="icon" width="20"
+                    height="20">
+                  <span>Избранное</span>
+                </a>
+              </li>
+              <li class="header__auth-item">
+                <a class="header__auth-link" href="#">
+                  <img class="header__auth-link-img" src="images/icon/settings-3-line.svg" alt="icon" width="20"
+                    height="20">
+                  <span>Мой профиль</span>
+                </a>
+              </li>
+              <li class="header__auth-item">
+                <a class="header__auth-link" href="#">
+                  <img class="header__auth-link-img" src="images/icon/logout-box-r-line.svg" alt="icon" width="20"
+                    height="20">
+                  <span>Выход</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="header__auth-bottom">
-          <ul class="header__auth-list">
-            <li class="header__auth-item">
-              <a class="header__auth-link" href="#">
-                <img class="header__auth-link-img" src="images/icon/user-3-line.svg" alt="icon" width="20" height="20">
-                <span>Кабинет автора</span>
-              </a>
-            </li>
-            <li class="header__auth-item">
-              <a class="header__auth-link" href="#">
-                <img class="header__auth-link-img" src="images/icon/heart-3-line.svg" alt="icon" width="20" height="20">
-                <span>Избранное</span>
-              </a>
-            </li>
-            <li class="header__auth-item">
-              <a class="header__auth-link" href="#">
-                <img class="header__auth-link-img" src="images/icon/settings-3-line.svg" alt="icon" width="20"
-                  height="20">
-                <span>Мой профиль</span>
-              </a>
-            </li>
-            <li class="header__auth-item">
-              <a class="header__auth-link" href="#">
-                <img class="header__auth-link-img" src="images/icon/logout-box-r-line.svg" alt="icon" width="20"
-                  height="20">
-                <span>Выход</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+
       </div>
-
-    </div>
-  </nav>
+    </nav>
 
 
-  <div class="main__inner _accent-bg">
+    <div class="main__inner _accent-bg">
 
-    <div class="main-page">
+      <div class="main-page">
 
-      <section class="main-item">
+        <section class="main-item">
 
   <div class="main-item__title-wrap">
     <div class="main-item__title-left">
@@ -647,7 +651,7 @@
 </section>
 
 
-      <section class="main-item">
+        <section class="main-item">
 
   <div class="main-item__title-wrap">
     <div class="main-item__title-left">
@@ -1069,7 +1073,7 @@
 
 </section>
 
-      <section class="main-item">
+        <section class="main-item">
 
   <div class="main-item__title-wrap">
     <div class="main-item__title-left">
@@ -1284,7 +1288,7 @@
 
 </section>
 
-      <section class="main-item">
+        <section class="main-item">
 
   <div class="main-item__title-wrap">
     <div class="main-item__title-left">
@@ -1385,7 +1389,7 @@
 
 </section>
 
-      <section class="main-item main-list">
+        <section class="main-item main-list">
 
   <div class="main-item__title-wrap">
     <div class="main-item__title-left">
@@ -1478,14 +1482,14 @@
 </section>
 
 
+      </div>
+
+
+
     </div>
+  </main>
 
-
-
-  </div>
-</main>
-
-<footer class="footer">
+  <footer class="footer">
   <div class="container">
     <div class="footer__top">
       <a class="footer__logo logo" href="#">
@@ -1544,6 +1548,9 @@
     </div>
   </div>
 </footer>
+
+</div>
+
 
 <script src="libs/jquery.min.js"></script>
 <script src="libs/swiper-bundle.min.js"></script>
