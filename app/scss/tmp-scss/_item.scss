@@ -129,6 +129,7 @@
 
   &__right {
     position: relative;
+
     @include adpt ($bmob-r) {
       height: 24px;
     }

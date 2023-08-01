@@ -1,0 +1,136 @@
+.input {
+  &__label {
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+
+    &._check {
+      padding-left: 25px;
+      position: relative;
+      cursor: pointer;
+      line-height: 20px;
+      margin-bottom: 0;
+      display: inherit;
+
+      @include adpt ($bmob-r) {
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid $grey;
+        left: 0;
+        top: 0;
+        transition: all 0.3s;
+        z-index: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-image: url('../images/icon/check-line.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 2px;
+        top: 3px;
+        z-index: 1;
+      }
+
+      & a {
+        color: $link;
+        text-decoration: underline;
+
+        &:hover {
+          color: $linkHover;
+        }
+      }
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    border: 1px solid $grey;
+    border-radius: $br-small;
+    padding: 10px;
+    transition: border-color 0.3s;
+
+    &:hover,
+    &:focus {
+      border-color: $default-dark;
+    }
+
+    &._pass {
+      padding-right: 40px;
+    }
+
+    &._check {
+      position: absolute;
+      opacity: 0;
+      z-index: -10;
+      pointer-events: none;
+
+      &:checked+label {
+        &::after {
+          background-color: $accent;
+          border-color: $accent;
+        }
+
+      }
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+
+    &._show {
+      & .input__btn-show-on {
+        opacity: 1;
+      }
+
+      & .input__btn-show-off {
+        opacity: 0;
+      }
+    }
+
+  }
+
+  &__icon-img {
+    width: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    object-fit: contain;
+    transition: opacity 0.3s;
+    z-index: 1;
+  }
+
+  &__btn-show-off {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  &__btn-show-on {
+    opacity: 0;
+  }
+}

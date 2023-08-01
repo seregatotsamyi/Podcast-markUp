@@ -5,6 +5,8 @@ $white: var(--white-color);
 $red: var(--red-color);
 $grey: var(--grey-color);
 $green: var(--green-color);
+$link: var(--link-color);
+$linkHover: var(--link-hover-color);
 $bg-dark: var(--bg-color-dark);
 $bg-dark-l: var(--bg-color-dark-l);
 
@@ -23,7 +25,9 @@ $mainFont: var(--main-font);
   --green-color: #23A45A; 
   --red-color: #F11A1A; 
   --grey-color: #E5E5EB; 
-
+  --link-color: #0E40F0; 
+  --link-hover-color: #2e56e4; 
+  
   --bg-color-dark: #0A0621; 
   --bg-color-dark-l: #231f38; 
 

@@ -1,0 +1,83 @@
+@include('components/_head.html')
+<div id="root">
+  <div class="app">
+    @include('components/_header.html')
+
+    <section class="login">
+      <form class="login__form">
+        <div class="login__title title">
+          Регистрация
+        </div>
+        <div class="login__text">
+          Заполните все поля
+        </div>
+        <div class="login__grid">
+          <div class="input">
+            <label class="input__label" for="name">
+              Почта
+            </label>
+            <div class="input__input-wrap">
+              <input class="input__input" type="text" id="name">
+            </div>
+          </div>
+          <div class="input">
+            <label class="input__label" for="name2">
+              Имя и фамилия
+            </label>
+            <div class="input__input-wrap">
+              <input class="input__input" type="text" id="name2">
+            </div>
+          </div>
+          <div class="input">
+            <label class="input__label" for="pass">
+              Пароль
+            </label>
+            <div class="input__input-wrap">
+              <input class="input__input _pass" type="password" id="pass">
+              <button class="input__icon js-pass-toggle" type="button">
+                <img class="input__btn-show-off input__icon-img" src="images/icon/eye-off-line.svg" width="24" height="24" alt="pass-off">
+                <img class="input__btn-show-on input__icon-img" src="images/icon/eye-line.svg" width="24" height="24" alt="pass-on">
+              </button>
+            </div>
+
+          </div>
+          <div class="input">
+            <label class="input__label" for="pass2">
+              Повторите пароль
+            </label>
+            <div class="input__input-wrap">
+              <input class="input__input _pass" type="password" id="pass2">
+              <button class="input__icon js-pass-toggle" type="button">
+                <img class="input__btn-show-off input__icon-img" src="images/icon/eye-off-line.svg" width="24" height="24" alt="pass-off">
+                <img class="input__btn-show-on input__icon-img" src="images/icon/eye-line.svg" width="24" height="24" alt="pass-on">
+              </button>
+            </div>
+
+          </div>
+          <div class="input">
+            <input class="input__input _check" type="checkbox" id="checkbox">
+            <label class="input__label _check" for="checkbox">
+              <span>Я ознакомился(-ась) с </span> <a href="">соглашением на обработку персональных данных</a>  и принимаю его условия
+            </label>
+          
+          </div>
+          <button class="login__btn btn">
+            Войти
+          </button>
+          <div class="login__bottom">
+            <a class="login__link-pass" href="#">
+              Забыли пароль?
+            </a>
+            <div class="login__bottom-right">
+              <span>Нет аккаунта? </span><a href="#">Зарегистрироваться!</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    @include('components/_footer.html')
+  </div>
+</div>
+
+@include('components/_footer-scripts.html')
